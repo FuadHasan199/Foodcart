@@ -24,7 +24,11 @@
       rel="stylesheet"
       type="text/css"
     />
-    
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/fluency/48/hamburger.png"
+      type="image/x-icon"
+    />
     <title>Food for ever</title>
     <style>
       .ubuntu-medium {
@@ -37,77 +41,201 @@
         font-weight: 400;
         font-style: normal;
       }
+
+      .roboto {
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
     </style>
   </head>
   <body>
-    <!--navbar-->
-  <div
-      class="navbar bg-transparent/25 absolute z-1 py-3 text-white shadow-sm z-1 px-8 md:px-16 lg:px-24 mx-auto"
-    >
-      <div class="flex-1 mx-auto">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <header>
+      <!--navbar-->
+      <div
+        class=" navbar bg-transparent/25 absolute z-1 py-3 text-white shadow-sm z-1 px-8 md:px-16 lg:px-24 mx-auto"
+      >
+        <div class="flex-1 mx-auto">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content font-[ubuntu-bold] rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+              <li><a>Home</a></li>
+              <li><a>AboutUs</a></li>
+              <li><a>Shop</a></li>
+              <li><a>value</a></li>
+              <li><a>ContactUs</a></li>
+            </ul>
           </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content font-[ubuntu-bold] rounded-box z-1 mt-3 w-52 p-2 shadow"
-          >
-            <li><a>Home</a></li>
-            <li><a>AboutUs</a></li>
-            <li><a>Shop</a></li>
-            <li><a>value</a></li>
-            <li><a>ContactUs</a></li>
+          <a class="btn btn-ghost text-3xl font-[ubuntu-medium]">Foodie</a>
+        </div>
+        <div class="px-2 text-lg hidden lg:flex">
+          <ul class="menu menu-horizontal text-base font-semibold px-5 px-1">
+            <li class="hover:text-[#ff8d29]"><a>Home</a></li>
+            <li class="hover:text-[#ff8d29]"><a>AboutUs</a></li>
+            <li class="hover:text-[#ff8d29]"><a>shop</a></li>
+            <li class="hover:text-[#ff8d29]"><a>value</a></li>
+            <li class="hover:text-[#ff8d29]"><a>contactus</a></li>
+            <li class="hover:text-[#ff8d29]">
+              <span class="material-symbols-outlined"> search </span>
+            </li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-3xl font-[ubuntu-medium]">Foodie</a>
+        <div class="">
+          <a
+            class="px-[40px] py-[5px] rounded-none btn btn-outline btn-warning bg-[#ff8d29] text-white hover:bg-red-400"
+            >Reservation</a
+          >
+        </div>
       </div>
-      <div class="px-2 text-lg hidden lg:flex">
-        <ul class="menu menu-horizontal text-base font-semibold px-5 px-1">
-          <li><a>Home</a></li>
-          <li><a>AboutUs</a></li>
-          <li><a>shop</a></li>
-          <li><a>value</a></li>
-          <li><a>contactus</a></li>
-          <li><span class="material-symbols-outlined"> search </span></li>
-        </ul>
+    </header>
+    <!--main section started-->
+    <main>
+      <!--banner-->
+      <div
+        class="min-h-screen"
+        style="background-image: url('./images/hero-bg.jpg')"
+      >
+        <div
+          class="text-neutral-content text-center flex justify-center items-center min-h-screen"
+        >
+          <div class="flex-1 text-left">
+            <div class="w-[80%] mx-auto pl-5">
+              <p class="text-6xl font-[roboto] font-black">
+                Supper delicious Burger in town!
+              </p>
+              <p class="text-xl font-[ubuntu-regular] my-5">
+                Food is any substance consumed to provide nutritional support
+                for an organism
+              </p>
+              <button
+                class="px-[30px] my-[10px] py-5 rounded-none btn btn-outline btn-warning bg-[#FF9D2E] text-white text-xl font-[ubuntu-medium] hover:bg-red-400"
+              >
+                Book a table
+              </button>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="w-[600px] mt-26">
+              <img src="./images/hero-banner.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="">
-        <a class="px-[40px] py-[5px] btn btn-outline btn-warning bg-[#ff8d29] text-white">Reservation</a>
+      <!--card container-->
+      <div class="pt-28 pb-28 bg-[#F9F6F0] px-8 md:px-16 lg:px-24 mx-auto">
+        <div class="flex justify-center items-center gap-2">
+          <!--first card-->
+          <div
+            class=" card bg-[#FFFFFF] px-[30px] py-[40px] w-[300px] shadow-sm text-center hover:bg-[#FF9D2E] hover:cursor-pointer"
+          >
+            <div class="flex justify-center ">
+              <img src="./images/promo-icon-1.svg" alt="" />
+            </div>
+            <div class="card-body  text-center">
+              <div class="flex justify-center"><h2 class="card-title text-center">Maxican Pizza</h2></div>
+              <p>
+                Food is any substance consumed to provide nutritional support
+                for an organism
+              </p>
+            </div>
+            <div>
+              <div class="w-[238px] h-[238px] ">
+                <img src="./images/promo-1.png" alt="Shoes" />
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+          <!--second card-->
+          <div
+            class=" card bg-[#FFFFFF] px-[30px] py-[40px] w-[300px] shadow-sm text-center hover:bg-[#FF9D2E] hover:cursor-pointer"
+          >
+            <div class="flex justify-center ">
+              <img src="./images/promo-icon-2.svg" alt="" />
+            </div>
+            <div class="card-body  text-center">
+              <div class="flex justify-center"><h2 class="card-title text-right">Soft Drinks</h2></div>
+              <p>
+                Food is any substance consumed to provide nutritional support
+                for an organism
+              </p>
+            </div>
+            <div>
+              <div class="w-[238px] h-[238px] ">
+                <img src="./images/promo-2.png" alt="Shoes" />
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+          <!--third card-->
+         <div
+            class=" card bg-[#FFFFFF] px-[30px] py-[40px] w-[300px] shadow-sm text-center hover:bg-[#FF9D2E] hover:cursor-pointer"
+          >
+            <div class="flex justify-center ">
+              <img src="./images/promo-icon-3.svg" alt="" />
+            </div>
+            <div class="card-body  text-center">
+              <div class="flex justify-center"><h2 class="card-title text-right">French Fry</h2></div>
+              <p>
+                Food is any substance consumed to provide nutritional support
+                for an organism
+              </p>
+            </div>
+            <div>
+              <div class="w-[238px] h-[238px] ">
+                <img src="./images/promo-3.png" alt="Shoes" />
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+          <!--fourth card-->
+          <div
+            class=" card bg-[#FFFFFF] px-[30px] py-[40px] w-[300px] shadow-sm text-center hover:bg-[#FF9D2E] hover:cursor-pointer"
+          >
+            <div class="flex justify-center ">
+              <img src="./images/promo-icon-4.svg" alt="" />
+            </div>
+            <div class="card-body  text-center">
+              <div class="flex justify-center"><h2 class="card-title text-right">Burger Kingo</h2></div>
+              <p>
+                Food is any substance consumed to provide nutritional support
+                for an organism
+              </p>
+            </div>
+            <div>
+              <div class="w-[238px] h-[238px] ">
+                <img src="./images/promo-4.png" alt="Shoes" />
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-    <!--banner-->
+    </main>
 
-    <div
-   class="min-h-screen"
-   style="background-image: url('./images/hero-bg.jpg');">
-  
-  <div class="text-neutral-content text-center flex justify-center items-center min-h-screen">
-    <div class="flex-1 border">
-      <p class="text-5xl  font-[ubuntu-medium] font-bold">Supper delicious  Burger in town!</p>
-      <p class="text-xl font-[ubuntu-regular] my-5">Food is any substance consumed to provide nutritional support for an organism</p>
-    </div>
-    <div class="flex-1">
-       <div class="w-[600px] mt-26">
-        <img src="./images/hero-banner.png" alt="">
-       </div>
-    </div>
-  </div>
-  </div>
-   
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </body>
